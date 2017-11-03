@@ -1,7 +1,10 @@
-<%= @books.each do |book| %>
+List of Books
 
+<% @books.each do |book| %>
+
+  <%= book.id %>
   <%= book.title %>
   <%= book.author %>
   <%= book.already_read %>
 
-<% end %> 
+<% end %>
